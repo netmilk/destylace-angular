@@ -1,0 +1,9 @@
+<div class="bcg-widget" ng-controller='HashtagBoxController'>
+  <h2>{{hashtag}}</h2>
+  <div ng-repeat='search in searches'>
+    <div ng-repeat="result in search.results">
+      <strong>@{{result.from_user}}</strong> {{result.text}}
+    </div>
+  </div>
+</div>
+
